@@ -7,6 +7,9 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Update="MainPage1.xaml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
     <None Update="res\theme\theme.xaml">
       <SubType>Designer</SubType>
     </None>

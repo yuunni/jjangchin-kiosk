@@ -18,6 +18,7 @@
         <Button
               Text="Button"
               TextColor="Black"
+              ClickEvent="Button_ClickEvent"
               BackgroundImage="*Resource*/images/button_background.png"
               WidthSpecification="{Static LayoutParamPolicies.MatchParent}"  HeightSpecification="{Static LayoutParamPolicies.MatchParent}"/>
     </FlexContainer>

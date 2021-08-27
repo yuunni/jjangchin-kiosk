@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<View x:Class="jjangchin_kiosk.MainPage1"
+    xmlns="http://tizen.org/Tizen.NUI/2018/XAML"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+      WidthSpecification="{Static LayoutParamPolicies.MatchParent}"
+      HeightSpecification="{Static LayoutParamPolicies.MatchParent}"
+      BackgroundColor="Red"
+      xmlns:local="clr-namespace:jjangchin_kiosk" >
+    <View.Layout>
+        <LinearLayout LinearOrientation="Vertical" LinearAlignment="Center"/>
+    </View.Layout>
+    <View Size="200,200" BackgroundColor="Blue" />
+    <Button Text="Button" Clicked="Button_Clicked" WidthSpecification="550" HeightSpecification="550"/>
+</View>

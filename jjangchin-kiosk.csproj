@@ -12,8 +12,14 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>None</DebugType>
   </PropertyGroup>
+  <ItemGroup>
+    <None Remove="MainPage1.xaml" />
+  </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Include="MainPage1.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
     <EmbeddedResource Include="Scene1Page.xaml">
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>
