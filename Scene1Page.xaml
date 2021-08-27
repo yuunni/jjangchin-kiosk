@@ -2,6 +2,7 @@
 <View x:Class="jjangchin_kiosk.Scene1Page"
         xmlns="http://tizen.org/Tizen.NUI/2018/XAML"
         xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+        xmlns:c="clr-namespace:Tizen.NUI.Components;assembly=Tizen.NUI.Components"
         xmlns:local="clr-namespace:jjangchin_kiosk"
         WidthSpecification="{Static LayoutParamPolicies.MatchParent}"
         HeightSpecification="{Static LayoutParamPolicies.MatchParent}"
@@ -9,7 +10,15 @@
     <View.Layout>
         <LinearLayout LinearOrientation="Vertical" LinearAlignment="Center"></LinearLayout>
     </View.Layout>
-    <ImageView ResourceUrl="*Resource*/images/tizen.png"/>
-    <TextLabel Text="Hello Tizen NU!~!I!!"
-               PixelSize="36"/>
+    <ImageView ResourceUrl="*Resource*/images/cafe.png"/>
+    <View HeightSpecification="60" />
+    <FlexContainer
+        AlignItems="AlignCenter"
+        JustifyContent="JustifyCenter">
+        <Button
+              Text="Button"
+              TextColor="Black"
+              BackgroundImage="*Resource*/images/button_background.png"
+              WidthSpecification="{Static LayoutParamPolicies.MatchParent}"  HeightSpecification="{Static LayoutParamPolicies.MatchParent}"/>
+    </FlexContainer>
 </View>
