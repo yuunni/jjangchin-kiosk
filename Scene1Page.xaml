@@ -16,7 +16,8 @@
         AlignItems="AlignCenter"
         JustifyContent="JustifyCenter">
         <Button
-              Text="Button"
+              Text="주문하기"
+              FontFamily="배달의민족주아"
               TextColor="Black"
               ClickEvent="Button_ClickEvent"
               BackgroundImage="*Resource*/images/button_background.png"
