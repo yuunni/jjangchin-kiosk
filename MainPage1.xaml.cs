@@ -15,5 +15,11 @@ namespace jjangchin_kiosk{
     {
         Window.Instance.Remove(this);
     }
-}
+
+     private void textField_TextChanged(object sender, TextField.TextChangedEventArgs e)
+        {
+            Tizen.Log.Info("NUI", "Text changed" + e.TextField.Text + "\n");
+        }
+
+    }
 }

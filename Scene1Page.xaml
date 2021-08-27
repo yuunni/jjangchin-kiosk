@@ -13,10 +13,19 @@
     <ImageView ResourceUrl="*Resource*/images/cafe.png"/>
     <View HeightSpecification="60" />
     <FlexContainer
+        FlexDirection="Row"
         AlignItems="AlignCenter"
         JustifyContent="JustifyCenter">
         <Button
-              Text="주문하기"
+              Text="매장 이용"
+              FontFamily="배달의민족주아"
+              TextColor="Black"
+              ClickEvent="Button_ClickEvent"
+              BackgroundImage="*Resource*/images/button_background.png"
+              WidthSpecification="{Static LayoutParamPolicies.MatchParent}"  HeightSpecification="{Static LayoutParamPolicies.MatchParent}"/>
+        <View WidthSpecification="60" />
+        <Button
+              Text="포장 주문"
               FontFamily="배달의민족주아"
               TextColor="Black"
               ClickEvent="Button_ClickEvent"
