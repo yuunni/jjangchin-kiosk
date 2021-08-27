@@ -10,6 +10,6 @@
         <LinearLayout LinearOrientation="Vertical" LinearAlignment="Center"></LinearLayout>
     </View.Layout>
     <ImageView ResourceUrl="*Resource*/images/tizen.png"/>
-    <TextLabel Text="Hello Tizen NU!!I!!"
+    <TextLabel Text="Hello Tizen NU!~!I!!"
                PixelSize="36"/>
 </View>
