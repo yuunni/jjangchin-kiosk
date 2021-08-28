@@ -9,14 +9,15 @@ namespace jjangchin_kiosk{
         InitializeComponent();
     }
 
-    public ImageView Icon { get; }
+        private void Button_ClickEvent(object sender, Tizen.NUI.Components.Button e)
+        {
+            Window.Instance.Add(new KioskPage1());
+        }
 
-    private void Button_Clicked(object sender, Tizen.NUI.Components.ClickedEventArgs e)
-    {
-        Window.Instance.Remove(this);
-    }
+        public ImageView Icon { get; }
 
-     private void textField_TextChanged(object sender, TextField.TextChangedEventArgs e)
+
+        private void textField_TextChanged(object sender, TextField.TextChangedEventArgs e)
         {
             Tizen.Log.Info("NUI", "Text changed" + e.TextField.Text + "\n");
         }
