@@ -22,6 +22,8 @@ namespace jjangchin_kiosk
         {
             if(a==1)
                 Window.Instance.Add(new EasySelectPage());
+            else if(a==2)
+                Window.Instance.Add(new KioskPage2());
             else
                 Window.Instance.Add(new KioskPage1());
         }

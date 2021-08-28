@@ -20,6 +20,10 @@ namespace jjangchin_kiosk
                 new Item("apple","apple.png")},
                 new List<Item>()));
 
+            globalData.Add("~~~~~~~~", new User(
+                new List<Item>(){ new Item("coffee","~.png"),
+                new Item("apple","apple.png")},
+                new List<Item>()));
             Scene1 Instance = new Scene1();
             Instance.Run(args);
         }
