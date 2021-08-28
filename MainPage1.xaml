@@ -23,8 +23,9 @@
                WidthSpecification="{Static LayoutParamPolicies.MatchParent}"
                HeightSpecification="50"
                TextChanged="textField_TextChanged"
-               PlaceholderText="Placeholder Text"
-               PlaceholderTextFocused="Placeholder Text Focused"
+               PlaceholderText="이곳을 클릭해주세요"
+               PlaceholderTextFocused="바코드를 인식시키거나 직접 입력해주세요"
+               FontFamily="배달의민족주아"
                MaxLength="16"
                
                />
