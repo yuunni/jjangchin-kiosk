@@ -119,5 +119,13 @@ namespace jjangchin_kiosk
 
             Type = "Coffee";
         }
+            private void User_Button_ClickEvent(object sender, Tizen.NUI.Components.Button e)
+            {
+                this.adeBtn.BackgroundImage = "*Resource*/images/Selectpage2.png";
+                this.coffeeBtn.BackgroundImage = "*Resource*/images/Selectpage2.png";
+                this.UserBtn.BackgroundImage = "*Resource*/images/Selectpage.png";
+            this.UserBtn.Text = "[    ]님이 가장 최근에 드신 음료는 [      ] 입니다.";
+
+        }
     }
 }

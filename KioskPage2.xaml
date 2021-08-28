@@ -15,12 +15,22 @@
         AlignContent="AlignFlexStart"
         AlignItems="AlignFlexStart"
         JustifyContent="JustifyFlexStart">
+
+        <Button x:Name="UserBtn"
+            Text="즐겨찾기"
+            FontFamily="배달의민족주아"
+              TextColor="Black"
+              ClickEvent="User_Button_ClickEvent"
+              BackgroundImage="*Resource*/images/Selectpage.png"
+              WidthSpecification="300"  HeightSpecification="100" />
+        
+        <View WidthSpecification="30" />
         <Button x:Name="coffeeBtn"
             Text="커피"
             FontFamily="배달의민족주아"
               TextColor="Black"
               ClickEvent="Coffee_Button_ClickEvent"
-              BackgroundImage="*Resource*/images/Selectpage.png"
+              BackgroundImage="*Resource*/images/Selectpage2.png"
               WidthSpecification="300"  HeightSpecification="100" />
 
         <View WidthSpecification="30" />
