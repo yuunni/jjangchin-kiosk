@@ -18,19 +18,26 @@ namespace jjangchin_kiosk
             get;
         }
 
-        public User(List<Item> resent, List<Item> recommand)
+        public string Name
         {
+            get;
+        }
+
+        public User(string name,List<Item> resent, List<Item> recommand)
+        {
+            Name = name;
             Resent = resent;
             Recommand = recommand;
         }
     }
     class Item
     {
-        string Name
+        public string Name
         {
             get;
+            set;
         }
-        string Image {
+        public string Image {
             get;
         }
         public Item(string name, string image)

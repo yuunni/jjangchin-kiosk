@@ -7,21 +7,22 @@ namespace jjangchin_kiosk
 {
 	public partial class KioskPage2 : View
 {
-        string Type,UserName, R_Drink, FirstDrink, SecondDrink, ThirdDrink;
+        string Type,UserName, FirstDrink, SecondDrink, ThirdDrink;
+
 
         public KioskPage2()
         {
             InitializeComponent();
+            
             Type = "User";
-            UserName = "임동연";
-            R_Drink = "맛있는 음료";
+            UserName = Program.selectedUser.Name;
             FirstDrink = "1위 음료";
             SecondDrink = "2위 음료";
             ThirdDrink = "3위 음료";
 
-            this.UserText.Text = $"[{UserName}]님이 가장 최근에 주문하신 음료는 [{R_Drink}]입니다.";
+            this.UserText.Text = $"[{UserName}]님이 가장 최근에 주문하신 음료는 [{Program.selectedUser.Resent[0].Name}]입니다.";
             Button btn = new Button();
-            btn.Text = R_Drink;
+            btn.Text = Program.selectedUser.Resent[0].Name;
             btn.FontFamily = "배달의민족주아";
             btn.TextColor = Color.Black;
             btn.BackgroundImage = "*Resource*/images/button_background.png";
@@ -29,27 +30,23 @@ namespace jjangchin_kiosk
             this.btnList.Add(btn);
             btn.Clicked += (o, i) =>
             {
-                Window.Instance.Add(new SelectPage(R_Drink, 2));
+                Window.Instance.Add(new SelectPage(Program.selectedUser.Resent[0].Name, 2));
             };
-            this.UserText2.Text = $"1위-[{FirstDrink}]  2위-[{SecondDrink}]  3위-[{ThirdDrink}]";
-            List<string> li = new List<string>()
-                    {
-                    FirstDrink,
-                    SecondDrink,
-                    ThirdDrink
-                    };
+            this.UserText2.Text = $"1위-[{Program.selectedUser.Recommand[0].Name}]  2위-[{Program.selectedUser.Recommand[1].Name}]  3위-[{Program.selectedUser.Recommand[2].Name}]";
 
-            foreach (string v in li)
+
+
+            foreach (Item v in Program.selectedUser.Recommand)
             {
                 Button btn2 = new Button();
-                btn2.Text = v;
+                btn2.Text = v.Name;
                 btn2.FontFamily = "배달의민족주아";
                 btn2.TextColor = Color.Black;
                 btn2.BackgroundImage = "*Resource*/images/button_background.png";
                 btn2.Margin = new Extents(0, 20, 0, 20);
                 btn2.Clicked += (o, i) =>
                 {
-                    Window.Instance.Add(new SelectPage(v, 2));
+                    Window.Instance.Add(new SelectPage(v.Name, 2));
                 };
                 this.btnList2.Add(btn2);
             }
@@ -147,9 +144,9 @@ namespace jjangchin_kiosk
                         this.adeBtn.BackgroundImage = "*Resource*/images/Selectpage2.png";
                         this.coffeeBtn.BackgroundImage = "*Resource*/images/Selectpage2.png";
                         this.UserBtn.BackgroundImage = "*Resource*/images/Selectpage.png";
-                        this.UserText.Text = $"[{UserName}]님이 가장 최근에 주문하신 음료는 [{R_Drink}]입니다.";
+                        this.UserText.Text = $"[{UserName}]님이 가장 최근에 주문하신 음료는 [{Program.selectedUser.Resent[0].Name}]입니다.";
                         Button btn = new Button();
-                        btn.Text = R_Drink;
+                        btn.Text = Program.selectedUser.Resent[0].Name;
                         btn.FontFamily = "배달의민족주아";
                         btn.TextColor = Color.Black;
                         btn.BackgroundImage = "*Resource*/images/button_background.png";
@@ -157,7 +154,7 @@ namespace jjangchin_kiosk
                         this.btnList.Add(btn);
                         btn.Clicked += (o, i) =>
                         {
-                            Window.Instance.Add(new SelectPage(R_Drink,2));
+                            Window.Instance.Add(new SelectPage(Program.selectedUser.Resent[0].Name, 2));
                         };
                     this.UserText2.Text = $"1위-[{FirstDrink}]  2위-[{SecondDrink}]  3위-[{ThirdDrink}]";
                     List<string> li = new List<string>()

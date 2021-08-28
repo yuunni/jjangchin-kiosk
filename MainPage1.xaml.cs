@@ -27,7 +27,9 @@ namespace jjangchin_kiosk{
 
             if (Program.globalData.ContainsKey(e.TextField.Text))
             {
-                User user = Program.globalData[e.TextField.Text];
+
+
+                Program.selectedUser = Program.globalData[e.TextField.Text];
                 Window.Instance.Add(new KioskPage2());
             }
 

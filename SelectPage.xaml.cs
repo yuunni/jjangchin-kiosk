@@ -6,15 +6,18 @@ namespace jjangchin_kiosk
 	public partial class SelectPage : View
     {
         int a=0;
+        string Data;
         public SelectPage(string data, int a1)
         {
             InitializeComponent();
             a = a1;
+            Data = data;
             this.orderText.Text = $"[{data}]를 주문하시겠습니까?";
         }
         public SelectPage(string data)
         {
             InitializeComponent();
+            Data = data;
 
             this.orderText.Text = $"[{data}]를 주문하시겠습니까?";
         }
@@ -29,6 +32,8 @@ namespace jjangchin_kiosk
         }
         private void Yes_Button_ClickEvent(object sender, Tizen.NUI.Components.Button e)
         {
+            if (Program.selectedUser != null)
+                Program.selectedUser.Resent[0].Name = Data;
             Window.Instance.Add(new CompletePage());
         }
     }
