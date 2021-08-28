@@ -64,5 +64,27 @@
                 />
         </View.Layout>
     </View>
+    
+    <View HeightSpecification="20" />
+    <TextLabel Text=""
+               x:Name="UserText2"
+               PixelSize="30"
+               TextColor= "Black"
+               WidthSpecification="{Static LayoutParamPolicies.MatchParent}"
+               HeightSpecification="{Static LayoutParamPolicies.WrapContent}"
+               HorizontalAlignment="Center"
+               FontFamily="배달의민족주아"/>
+    <View HeightSpecification="20" />
+    
+    <View x:Name="btnList2" HeightSpecification="{Static LayoutParamPolicies.MatchParent}">
+        <View.Layout>
+            <FlexLayout
+                Direction="Column"
+                Alignment="FlexStart"
+                Justification="FlexStart"
+                WrapType="Wrap"
+                />
+        </View.Layout>
+    </View>
 
 </View>

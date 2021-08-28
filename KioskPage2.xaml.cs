@@ -7,7 +7,7 @@ namespace jjangchin_kiosk
 {
 	public partial class KioskPage2 : View
 {
-        string Type,UserName, R_Drink;
+        string Type,UserName, R_Drink, FirstDrink, SecondDrink, ThirdDrink;
 
         public KioskPage2()
         {
@@ -15,20 +15,52 @@ namespace jjangchin_kiosk
             Type = "User";
             UserName = "임동연";
             R_Drink = "맛있는 음료";
+            FirstDrink = "1위 음료";
+            SecondDrink = "2위 음료";
+            ThirdDrink = "3위 음료";
+
             this.UserText.Text = $"[{UserName}]님이 가장 최근에 주문하신 음료는 [{R_Drink}]입니다.";
             Button btn = new Button();
             btn.Text = R_Drink;
             btn.FontFamily = "배달의민족주아";
             btn.TextColor = Color.Black;
             btn.BackgroundImage = "*Resource*/images/button_background.png";
+            btn.Margin = new Extents(0, 20, 20, 20);
             this.btnList.Add(btn);
+            btn.Clicked += (o, i) =>
+            {
+                Window.Instance.Add(new SelectPage(R_Drink, 2));
+            };
+            this.UserText2.Text = $"1위-[{FirstDrink}]  2위-[{SecondDrink}]  3위-[{ThirdDrink}]";
+            List<string> li = new List<string>()
+                    {
+                    FirstDrink,
+                    SecondDrink,
+                    ThirdDrink
+                    };
+
+            foreach (string v in li)
+            {
+                Button btn2 = new Button();
+                btn2.Text = v;
+                btn2.FontFamily = "배달의민족주아";
+                btn2.TextColor = Color.Black;
+                btn2.BackgroundImage = "*Resource*/images/button_background.png";
+                btn2.Margin = new Extents(0, 20, 0, 20);
+                btn2.Clicked += (o, i) =>
+                {
+                    Window.Instance.Add(new SelectPage(v, 2));
+                };
+                this.btnList2.Add(btn2);
+            }
         }
 
         private void Ade_Button_ClickEvent(object sender, Button e)
         {
             UserText.Text = "";
+            UserText2.Text = "";
             new List<View>(btnList.Children).ForEach(btnList.Remove);
-            UserText.Reset();
+            new List<View>(btnList2.Children).ForEach(btnList2.Remove);
 
             if (Type != "Ade")
             {
@@ -69,8 +101,9 @@ namespace jjangchin_kiosk
         private void Coffee_Button_ClickEvent(object sender, Tizen.NUI.Components.Button e)
         {
             UserText.Text = "";
+            UserText2.Text = "";
             new List<View>(btnList.Children).ForEach(btnList.Remove);
-            UserText.Reset();
+            new List<View>(btnList2.Children).ForEach(btnList2.Remove);
             if (Type != "Coffee")
             {
                 this.adeBtn.BackgroundImage = "*Resource*/images/Selectpage2.png";
@@ -109,7 +142,7 @@ namespace jjangchin_kiosk
             private void User_Button_ClickEvent(object sender, Tizen.NUI.Components.Button e)
             {
                 if(Type != "User")
-                    { 
+                { 
                         new List<View>(btnList.Children).ForEach(btnList.Remove);
                         this.adeBtn.BackgroundImage = "*Resource*/images/Selectpage2.png";
                         this.coffeeBtn.BackgroundImage = "*Resource*/images/Selectpage2.png";
@@ -126,7 +159,29 @@ namespace jjangchin_kiosk
                         {
                             Window.Instance.Add(new SelectPage(R_Drink,2));
                         };
-            }
+                    this.UserText2.Text = $"1위-[{FirstDrink}]  2위-[{SecondDrink}]  3위-[{ThirdDrink}]";
+                    List<string> li = new List<string>()
+                    {
+                    FirstDrink,
+                    SecondDrink,
+                    ThirdDrink
+                    };
+
+                foreach (string v in li)
+                {
+                    Button btn2 = new Button();
+                    btn2.Text = v;
+                    btn2.FontFamily = "배달의민족주아";
+                    btn2.TextColor = Color.Black;
+                    btn2.BackgroundImage = "*Resource*/images/button_background.png";
+                    btn2.Margin = new Extents(0, 20, 0, 20);
+                    btn2.Clicked += (o, i) =>
+                    {
+                        Window.Instance.Add(new SelectPage(v, 2));
+                    };
+                    this.btnList2.Add(btn2);
+                }
+                }
 
                 Type = "User";
 
