@@ -1,4 +1,5 @@
-﻿using Tizen.NUI;
+﻿using System.Collections.Generic;
+using Tizen.NUI;
 using Tizen.NUI.BaseComponents;
 
 namespace jjangchin_kiosk{
@@ -23,7 +24,15 @@ namespace jjangchin_kiosk{
 
         private void textField_TextChanged(object sender, TextField.TextChangedEventArgs e)
         {
-            Tizen.Log.Info("NUI", "Text changed" + e.TextField.Text + "\n");
+
+            if (Program.globalData.ContainsKey(e.TextField.Text))
+            {
+                User user = Program.globalData[e.TextField.Text];
+            }
+
+
+            Tizen.Log.Info("NUI", "Data Changed" + e.TextField.Text + "\n");
+
         }
 
     }

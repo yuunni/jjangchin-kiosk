@@ -15,6 +15,7 @@
   <ItemGroup>
     <None Remove="CompletePage.xaml" />
     <None Remove="EasySelectPage.xaml" />
+    <None Remove="Blackscreen.xaml" />
     <None Remove="KioskPage1.xaml" />
     <None Remove="KioskPage2.xaml" />
     <None Remove="MainPage1.xaml" />
@@ -27,6 +28,7 @@
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>
     <EmbeddedResource Include="EasySelectPage.xaml">
+    <EmbeddedResource Include="BlackScreen.xaml">
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>
     <EmbeddedResource Include="KioskPage1.xaml">
