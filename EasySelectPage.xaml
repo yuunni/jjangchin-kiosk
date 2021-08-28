@@ -1,48 +1,36 @@
 ﻿<?xml version="1.0" encoding="UTF-8" ?>
-<View x:Class="jjangchin_kiosk.KioskPage2"
+<View x:Class="jjangchin_kiosk.EasySelectPage"
     xmlns="http://tizen.org/Tizen.NUI/2018/XAML"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     WidthSpecification="{Static LayoutParamPolicies.MatchParent}"
     HeightSpecification="{Static LayoutParamPolicies.MatchParent}"
     BackgroundColor="White"
     xmlns:local="clr-namespace:jjangchin_kiosk" >
+
     <View.Layout>
         <LinearLayout LinearOrientation="Vertical" LinearAlignment="CenterHorizontal"/>
     </View.Layout>
     <View HeightSpecification="40" />
     <FlexContainer
         FlexDirection="Row"
-        AlignContent="AlignFlexStart"
-        AlignItems="AlignFlexStart"
-        JustifyContent="JustifyFlexStart">
+        AlignContent="AlignCenter"
+        AlignItems="AlignCenter"
+        JustifyContent="JustifyCenter">
         <Button x:Name="coffeeBtn"
-            Text="커피"
             FontFamily="배달의민족주아"
               TextColor="Black"
               ClickEvent="Coffee_Button_ClickEvent"
-              BackgroundImage="*Resource*/images/Selectpage.png"
-              WidthSpecification="300"  HeightSpecification="100" />
+              BackgroundImage="*Resource*/images/EasyCoffee.png"
+              WidthSpecification="400"  HeightSpecification="400" />
 
-        <View WidthSpecification="30" />
+        <View WidthSpecification="60" />
 
         <Button x:Name="adeBtn"               
-              Text="에이드"
               FontFamily="배달의민족주아"
               TextColor="Black"
               ClickEvent="Ade_Button_ClickEvent"
-              BackgroundImage="*Resource*/images/Selectpage2.png"
-              WidthSpecification="300"  HeightSpecification="100"/>
+              BackgroundImage="*Resource*/images/EasyAde.png"
+              WidthSpecification="400"  HeightSpecification="400"/>
     </FlexContainer>
-    <View HeightSpecification="50" />
-    <View WidthSpecification="50" />
-    <View x:Name="btnList" HeightSpecification="{Static LayoutParamPolicies.MatchParent}">
-        <View.Layout>
-            <FlexLayout
-                Direction="Column"
-                Alignment="FlexStart"
-                Justification="FlexStart"
-                WrapType="Wrap"
-                />
-        </View.Layout>
-    </View>
+
 </View>

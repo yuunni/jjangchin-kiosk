@@ -21,11 +21,18 @@
     <EmbeddedResource Update="KioskPage2.xaml">
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Update="CompletePage.xaml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Update="EasySelectPage.xaml">
     <EmbeddedResource Update="BlackScreen.xaml">
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <None Update="res\theme\theme.xaml">
       <SubType>Designer</SubType>
     </None>
+    <EmbeddedResource Update="SelectPage.xaml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
   </ItemGroup>
 </Project>

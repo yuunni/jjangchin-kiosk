@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<View x:Class="jjangchin_kiosk.CompletePage"
+    xmlns="http://tizen.org/Tizen.NUI/2018/XAML"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    WidthSpecification="{Static LayoutParamPolicies.MatchParent}"
+    HeightSpecification="{Static LayoutParamPolicies.MatchParent}"
+    BackgroundColor="White"
+    xmlns:local="clr-namespace:jjangchin_kiosk" >
+    <View.Layout>
+        <LinearLayout LinearOrientation="Vertical" LinearAlignment="Center"/>
+    </View.Layout>
+    <View HeightSpecification="30" />
+    <TextLabel Text="주문이 완료되었습니다."
+               PixelSize="60"
+               TextColor= "Black"
+               WidthSpecification="{Static LayoutParamPolicies.MatchParent}"
+               HeightSpecification="{Static LayoutParamPolicies.WrapContent}"
+               HorizontalAlignment="Center"
+               FontFamily="배달의민족주아"/>
+    <View HeightSpecification="30" />    
+    <TextLabel Text="짱친카페를 이용해주셔서 감사합니다."
+               PixelSize="60"
+               TextColor= "Black"
+               WidthSpecification="{Static LayoutParamPolicies.MatchParent}"
+               HeightSpecification="{Static LayoutParamPolicies.WrapContent}"
+               HorizontalAlignment="Center"
+               FontFamily="배달의민족주아"/>
+    <View HeightSpecification="50" />
+    <FlexContainer
+        FlexDirection="Column"
+        AlignContent="AlignCenter"
+        AlignItems="AlignCenter"
+        JustifyContent="JustifyCenter">
+        <Button   
+            Text="메인화면으로 돌아가기->"
+            FontFamily="배달의민족주아"
+              ClickEvent="Button_ClickEvent"
+              TextColor="Black"
+              BackgroundImage="*Resource*/images/button_background.png"
+              WidthSpecification="{Static LayoutParamPolicies.MatchParent}"
+              HeightSpecification="{Static LayoutParamPolicies.WrapContent}" />
+    </FlexContainer>
+
+</View>
