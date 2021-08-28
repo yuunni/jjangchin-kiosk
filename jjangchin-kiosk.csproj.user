@@ -25,6 +25,8 @@
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Update="EasySelectPage.xaml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
     <EmbeddedResource Update="BlackScreen.xaml">
       <SubType>Designer</SubType>
     </EmbeddedResource>

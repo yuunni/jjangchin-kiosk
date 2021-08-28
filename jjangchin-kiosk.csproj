@@ -28,6 +28,8 @@
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>
     <EmbeddedResource Include="EasySelectPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
     <EmbeddedResource Include="BlackScreen.xaml">
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>
