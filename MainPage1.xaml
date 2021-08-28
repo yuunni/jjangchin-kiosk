@@ -38,17 +38,17 @@
         <Button   
             Text="키오스크 주문하기->"
             FontFamily="배달의민족주아"
-              ClickEvent="Button_ClickEvent"
-              TextColor="Black"
-              BackgroundImage="*Resource*/images/button_background.png"
-              WidthSpecification="500"  HeightSpecification="200" />
+            Clicked="Button_ClickEvent"
+            TextColor="Black"
+            BackgroundImage="*Resource*/images/button_background.png"
+            WidthSpecification="500"  HeightSpecification="200" />
         
         <View HeightSpecification="50" />
         
         <Button                
               Text="쉬운 메뉴 고르기->"
               FontFamily="배달의민족주아"
-              ClickEvent="Button_ClickEvent"
+              Clicked="Button_ClickEvent"
               TextColor="Black"
               BackgroundImage="*Resource*/images/button_background.png"
               WidthSpecification="300"  HeightSpecification="100"/>

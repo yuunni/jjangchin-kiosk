@@ -13,12 +13,16 @@
     <DebugType>None</DebugType>
   </PropertyGroup>
   <ItemGroup>
+    <None Remove="Blackscreen.xaml" />
     <None Remove="KioskPage1.xaml" />
     <None Remove="KioskPage2.xaml" />
     <None Remove="MainPage1.xaml" />
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Include="BlackScreen.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
     <EmbeddedResource Include="KioskPage1.xaml">
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>

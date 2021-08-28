@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Tizen.Applications;
 using Tizen.NUI;
+using Tizen.Peripheral.Gpio;
 using Tizen.NUI.BaseComponents;
 using Tizen.NUI.Xaml;
 
@@ -12,6 +13,7 @@ namespace jjangchin_kiosk
 {
     public class Scene1 : NUIApplication
     {
+        private BlackScreen mainPage;
         override protected void OnCreate()
         {
             base.OnCreate();
@@ -19,7 +21,8 @@ namespace jjangchin_kiosk
             // NOTE To use theme.xaml, uncomment below line.
             // ThemeManager.ApplyTheme(new Theme(Tizen.Applications.Application.Current.DirectoryInfo.Resource + "theme/theme.xaml"));
 
-            GetDefaultWindow().Add(new Scene1Page());
+            mainPage = new BlackScreen();
+            GetDefaultWindow().Add(mainPage);
             GetDefaultWindow().KeyEvent += OnScene1KeyEvent;
         }
 
@@ -43,6 +46,7 @@ namespace jjangchin_kiosk
 
         override protected void OnTerminate()
         {
+            mainPage.Stop();
             base.OnTerminate();
         }
 

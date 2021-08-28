@@ -27,7 +27,7 @@ namespace jjangchin_kiosk{
             }
 
 
-            Tizen.Log.Info("NUI", "Text changed" + e.TextField.Text + "\n");
+            Tizen.Log.Info("NUI", "Data Changed" + e.TextField.Text + "\n");
 
         }
 
