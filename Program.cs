@@ -18,22 +18,22 @@ namespace jjangchin_kiosk
         {
             
             globalData.Add("2833670479702025", new User("서윤재",
-                new List<Item>(){ new Item("coffee","~.png"),
+                new List<Item>(){ new Item("아인슈페너","~.png"),
                 new Item("apple","apple.png")},
                 new List<Item>()
                 {
-                    new Item("맛있는 음료",""),
-                    new Item("맛있는 음료1",""),
-                    new Item("맛있는 음료2",""),
+                    new Item("바닐라 라떼",""),
+                    new Item("아인슈페너",""),
+                    new Item("레몬 에이드",""),
                 }));
 
             globalData.Add("2861183814422024", new User("임동연",
-                new List<Item>(){ new Item("coffee","~.png"),
+                new List<Item>(){ new Item("자몽 에이드","~.png"),
                 new Item("apple","apple.png")},
                 new List<Item>(){
-                    new Item("맛있는 음료",""),
-                    new Item("맛있는 음료1",""),
-                    new Item("맛있는 음료2",""),
+                    new Item("아메리카노",""),
+                    new Item("카페 모카",""),
+                    new Item("연유 라떼",""),
                 }));
             Scene1 Instance = new Scene1();
             Instance.Run(args);
