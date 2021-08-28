@@ -15,7 +15,7 @@ namespace jjangchin_kiosk
         override protected void OnCreate()
         {
             base.OnCreate();
-
+            // Program.globalData["hhh"];
             // NOTE To use theme.xaml, uncomment below line.
             // ThemeManager.ApplyTheme(new Theme(Tizen.Applications.Application.Current.DirectoryInfo.Resource + "theme/theme.xaml"));
 
