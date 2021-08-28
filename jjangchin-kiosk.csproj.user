@@ -10,6 +10,9 @@
     <EmbeddedResource Update="MainPage1.xaml">
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Update="kioskpage_1.xaml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
     <None Update="res\theme\theme.xaml">
       <SubType>Designer</SubType>
     </None>
