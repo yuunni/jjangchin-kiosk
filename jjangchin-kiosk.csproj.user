@@ -19,5 +19,8 @@
     <None Update="res\theme\theme.xaml">
       <SubType>Designer</SubType>
     </None>
+    <EmbeddedResource Update="SelectPage.xaml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
   </ItemGroup>
 </Project>

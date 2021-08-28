@@ -16,6 +16,7 @@
     <None Remove="KioskPage1.xaml" />
     <None Remove="KioskPage2.xaml" />
     <None Remove="MainPage1.xaml" />
+    <None Remove="SelectPage.xaml" />
   </ItemGroup>
 
   <ItemGroup>
@@ -29,6 +30,9 @@
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>
     <EmbeddedResource Include="Scene1Page.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectPage.xaml">
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>
   </ItemGroup>

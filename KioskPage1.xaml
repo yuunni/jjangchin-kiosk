@@ -9,28 +9,39 @@
     <View.Layout>
         <LinearLayout LinearOrientation="Vertical" LinearAlignment="CenterHorizontal"/>
     </View.Layout>
-    <View HeightSpecification="30" />
-    
+    <View HeightSpecification="40" />
     <FlexContainer
         FlexDirection="Row"
         AlignContent="AlignFlexStart"
-        AlignItems="AlignCenter"
+        AlignItems="AlignFlexStart"
         JustifyContent="JustifyFlexStart">
         <Button   
             Text="커피"
             FontFamily="배달의민족주아"
               TextColor="Black"
+              ClickEvent="Coffee_Button_ClickEvent"
               BackgroundImage="*Resource*/images/Selectpage.png"
               WidthSpecification="300"  HeightSpecification="100" />
 
-        <View HeightSpecification="30" />
+        <View WidthSpecification="30" />
 
         <Button                
               Text="에이드"
               FontFamily="배달의민족주아"
               TextColor="Black"
-              ClickEvent="Button_ClickEvent"
+              ClickEvent="Ade_Button_ClickEvent"
               BackgroundImage="*Resource*/images/Selectpage2.png"
               WidthSpecification="300"  HeightSpecification="100"/>
     </FlexContainer>
+    <View x:Name="btnList" HeightSpecification="{Static LayoutParamPolicies.MatchParent}">
+        <View WidthSpecification="60" />
+        <View.Layout>
+            <FlexLayout
+                Direction="Column"
+                Alignment="FlexStart"
+                Justification="FlexStart"
+                WrapType="Wrap"
+                />
+        </View.Layout>
+    </View>
 </View>

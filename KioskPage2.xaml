@@ -9,7 +9,6 @@
     <View.Layout>
         <LinearLayout LinearOrientation="Vertical" LinearAlignment="CenterHorizontal"/>
     </View.Layout>
-    <View HeightSpecification="30" />
 
     <FlexContainer
         FlexDirection="Row"
