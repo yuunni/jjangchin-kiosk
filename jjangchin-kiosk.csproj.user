@@ -19,6 +19,9 @@
     <EmbeddedResource Update="CompletePage.xaml">
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Update="EasySelectPage.xaml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
     <None Update="res\theme\theme.xaml">
       <SubType>Designer</SubType>
     </None>

@@ -9,9 +9,13 @@ namespace jjangchin_kiosk{
         InitializeComponent();
     }
 
-        private void Button_ClickEvent(object sender, Tizen.NUI.Components.Button e)
+        private void Button_ClickEvent1(object sender, Tizen.NUI.Components.Button e)
         {
             Window.Instance.Add(new KioskPage1());
+        }
+        private void Button_ClickEvent2(object sender, Tizen.NUI.Components.Button e)
+        {
+            Window.Instance.Add(new EasySelectPage());
         }
 
         public ImageView Icon { get; }

@@ -7,4 +7,30 @@
     BackgroundColor="White"
     xmlns:local="clr-namespace:jjangchin_kiosk" >
 
+    <View.Layout>
+        <LinearLayout LinearOrientation="Vertical" LinearAlignment="CenterHorizontal"/>
+    </View.Layout>
+    <View HeightSpecification="40" />
+    <FlexContainer
+        FlexDirection="Row"
+        AlignContent="AlignCenter"
+        AlignItems="AlignCenter"
+        JustifyContent="JustifyCenter">
+        <Button x:Name="coffeeBtn"
+            FontFamily="배달의민족주아"
+              TextColor="Black"
+              ClickEvent="Coffee_Button_ClickEvent"
+              BackgroundImage="*Resource*/images/EasyCoffee.png"
+              WidthSpecification="400"  HeightSpecification="400" />
+
+        <View WidthSpecification="60" />
+
+        <Button x:Name="adeBtn"               
+              FontFamily="배달의민족주아"
+              TextColor="Black"
+              ClickEvent="Ade_Button_ClickEvent"
+              BackgroundImage="*Resource*/images/EasyAde.png"
+              WidthSpecification="400"  HeightSpecification="400"/>
+    </FlexContainer>
+
 </View>
