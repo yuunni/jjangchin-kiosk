@@ -16,6 +16,9 @@
     <EmbeddedResource Update="KioskPage2.xaml">
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Update="CompletePage.xaml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
     <None Update="res\theme\theme.xaml">
       <SubType>Designer</SubType>
     </None>

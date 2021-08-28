@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<View x:Class="jjangchin_kiosk.EasySelectPage"
+    xmlns="http://tizen.org/Tizen.NUI/2018/XAML"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    WidthSpecification="{Static LayoutParamPolicies.MatchParent}"
+    HeightSpecification="{Static LayoutParamPolicies.MatchParent}"
+    BackgroundColor="White"
+    xmlns:local="clr-namespace:jjangchin_kiosk" >
+
+</View>

@@ -17,7 +17,7 @@ namespace jjangchin_kiosk
         }
         private void Yes_Button_ClickEvent(object sender, Tizen.NUI.Components.Button e)
         {
-            Window.Instance.Add(new MainPage1());
+            Window.Instance.Add(new CompletePage());
         }
     }
 }
