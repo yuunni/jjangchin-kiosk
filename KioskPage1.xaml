@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<View x:Class="jjangchin_kiosk.KioskPage1"
+    xmlns="http://tizen.org/Tizen.NUI/2018/XAML"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    WidthSpecification="{Static LayoutParamPolicies.MatchParent}"
+    HeightSpecification="{Static LayoutParamPolicies.MatchParent}"
+    BackgroundColor="White"
+    xmlns:local="clr-namespace:jjangchin_kiosk" >
+    <View.Layout>
+        <LinearLayout LinearOrientation="Vertical" LinearAlignment="CenterHorizontal"/>
+    </View.Layout>
+    <View HeightSpecification="30" />
+    
+    <FlexContainer
+        FlexDirection="Row"
+        AlignContent="AlignFlexStart"
+        AlignItems="AlignCenter"
+        JustifyContent="JustifyFlexStart">
+        <Button   
+            Text="커피"
+            FontFamily="배달의민족주아"
+              TextColor="Black"
+              BackgroundImage="*Resource*/images/Selectpage.png"
+              WidthSpecification="300"  HeightSpecification="100" />
+
+        <View HeightSpecification="30" />
+
+        <Button                
+              Text="에이드"
+              FontFamily="배달의민족주아"
+              TextColor="Black"
+              ClickEvent="Button_ClickEvent"
+              BackgroundImage="*Resource*/images/Selectpage2.png"
+              WidthSpecification="300"  HeightSpecification="100"/>
+    </FlexContainer>
+</View>
