@@ -15,7 +15,7 @@
         AlignContent="AlignFlexStart"
         AlignItems="AlignFlexStart"
         JustifyContent="JustifyFlexStart">
-        <Button   
+        <Button x:Name="coffeeBtn"
             Text="커피"
             FontFamily="배달의민족주아"
               TextColor="Black"
@@ -25,7 +25,7 @@
 
         <View WidthSpecification="30" />
 
-        <Button                
+        <Button x:Name="adeBtn"               
               Text="에이드"
               FontFamily="배달의민족주아"
               TextColor="Black"
@@ -33,8 +33,9 @@
               BackgroundImage="*Resource*/images/Selectpage2.png"
               WidthSpecification="300"  HeightSpecification="100"/>
     </FlexContainer>
+    <View HeightSpecification="50" />
+    <View WidthSpecification="50" />
     <View x:Name="btnList" HeightSpecification="{Static LayoutParamPolicies.MatchParent}">
-        <View WidthSpecification="60" />
         <View.Layout>
             <FlexLayout
                 Direction="Column"

@@ -20,6 +20,30 @@
                HorizontalAlignment="Center"
                FontFamily="배달의민족주아"/>
     <View HeightSpecification="60" />
-    
-    
+    <FlexContainer
+        FlexDirection="Row"
+        AlignContent="AlignCenter"
+        AlignItems="AlignCenter"
+        JustifyContent="JustifyCenter">
+        <Button   
+            Text="예"
+            FontFamily="배달의민족주아"
+              ClickEvent="Yes_Button_ClickEvent"
+              TextColor="Black"
+              BackgroundImage="*Resource*/images/button_background.png"
+              WidthSpecification="{Static LayoutParamPolicies.MatchParent}"
+              HeightSpecification="{Static LayoutParamPolicies.MatchParent}" />
+
+        <View WidthSpecification="50" />
+        <Button                
+              Text="아니오"
+              FontFamily="배달의민족주아"
+              ClickEvent="No_Button_ClickEvent"
+              TextColor="Black"
+              BackgroundImage="*Resource*/images/button_background.png"
+              WidthSpecification="{Static LayoutParamPolicies.MatchParent}"
+              HeightSpecification="{Static LayoutParamPolicies.MatchParent}"/>
+    </FlexContainer>
+
+
 </View>

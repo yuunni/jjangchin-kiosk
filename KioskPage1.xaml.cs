@@ -28,12 +28,17 @@ namespace jjangchin_kiosk
             {
                 Button btn = new Button();
                 btn.Text = v;
+                btn.FontFamily = "배달의민족주아";
+                btn.TextColor = Color.Black;
+                btn.BackgroundImage = "*Resource*/images/button_background.png";
+                btn.Margin = new Extents(0, 20, 0, 20);
                 btn.Clicked += (o, i) =>
                 {
                     Window.Instance.Add(new SelectPage(v));
                 };
                 this.btnList.Add(btn);
-                
+
+
             }
         }
 
@@ -43,6 +48,8 @@ namespace jjangchin_kiosk
 
             if (Type != "Ade")
             {
+                this.adeBtn.BackgroundImage = "*Resource*/images/Selectpage.png";
+                this.coffeeBtn.BackgroundImage = "*Resource*/images/Selectpage2.png";
                 List<string> li = new List<string>()
                 {
                 "오렌지 에이드",
@@ -56,6 +63,10 @@ namespace jjangchin_kiosk
                 {
                     Button btn = new Button();
                     btn.Text = v;
+                    btn.FontFamily = "배달의민족주아";
+                    btn.TextColor = Color.Black;
+                    btn.BackgroundImage = "*Resource*/images/button_background.png";
+                    btn.Margin = new Extents(0, 20, 0, 20);
                     btn.Clicked += (o, i) =>
                     {
                         Window.Instance.Add(new SelectPage(v));
@@ -76,6 +87,8 @@ namespace jjangchin_kiosk
 
             if (Type != "Coffee")
             {
+                this.adeBtn.BackgroundImage = "*Resource*/images/Selectpage2.png";
+                this.coffeeBtn.BackgroundImage = "*Resource*/images/Selectpage.png";
                 List<string> li = new List<string>()
                 {
                 "아메리카노",
@@ -90,11 +103,17 @@ namespace jjangchin_kiosk
                 {
                     Button btn = new Button();
                     btn.Text = v;
+                    btn.FontFamily = "배달의민족주아";
+                    btn.TextColor = Color.Black;
+                    btn.BackgroundImage = "*Resource*/images/button_background.png";
+                    btn.Margin = new Extents(0, 20, 0, 20);
                     btn.Clicked += (o, i) =>
                     {
                         Window.Instance.Add(new SelectPage(v));
                     };
                     this.btnList.Add(btn);
+
+
                 }
             }
 
