@@ -24,18 +24,18 @@
 ![Alt text](/img/image2.jpg)
 
 # Specification
-라즈베리파이 4<br />
-Display<br />
-Infrared Motion Sensor HC-SR501<br />
-Barcode Scanner<br />
+* 라즈베리파이 4<br />
+* Display<br />
+* Infrared Motion Sensor HC-SR501<br />
+* Barcode Scanner<br />
 
 ![Alt text](/img/image1.jpg)
 
 # 기능
-바코드 인식을 통한 사용자 인식<br />
-각각의 사용자에 따른 메뉴 추천<br />
-쉬운 UI의 메뉴 주문<br />
-센서를 통한 모션 감지<br />
+* 바코드 인식을 통한 사용자 인식<br />
+* 각각의 사용자에 따른 메뉴 추천<br />
+* 쉬운 UI의 메뉴 주문<br />
+* 센서를 통한 모션 감지<br />
 
 # 파일 리스트
 
