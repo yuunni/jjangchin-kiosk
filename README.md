@@ -63,7 +63,6 @@ CompletePage.xaml(.cs)|
 EasySelectPage.xaml(.cs)|
 SelectPage.xaml(.cs)|
 Scene1.cs|
-Scene1.cs|
 Class1.cs|
 Program.cs|
 
