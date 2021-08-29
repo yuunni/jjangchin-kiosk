@@ -78,7 +78,6 @@ CompletePage.xaml(.cs)|
 EasySelectPage.xaml(.cs)|
 SelectPage.xaml(.cs)|
 Scene1.cs|
-res/images(UI images)|
 
 **서윤재**
 파일명 |
