@@ -24,4 +24,70 @@ Infrared Motion Sensor HC-SR501<br />
 Barcode Scanner<br />
 
 # 기능
+바코드 인식을 통한 사용자 인식<br />
+각각의 사용자에 따른 메뉴 추천<br />
+쉬운 UI의 메뉴 주문<br />
+센서를 통한 모션 감지<br />
+
+# 파일 리스트
+
+파일명|내용
+---|---
+KioskPage1.xaml|추천이 없는 메뉴 주문 페이지
+KioskPage2.xaml|사용자 추천 메뉴 주문 페이지
+MainPage1.xaml|바코드 인식 페이지
+Scene1Page.xaml|최초 페이지
+CompletePage.xaml|주문 완료 페이지
+EasySelectPage.xaml|쉬운 UI의 주문 페이지
+SelectPage.xaml|메뉴 선택화면
+BlackScreen.Xaml|최초 키오스크의 빈 화면, 모션 인식 후 Scene1Page로 이동
+res/images|UI 이미지
+res/baedal.ttf|폰트파일(배달의민족)
+
+# 코드 기여자
+
+**오정민**
+파일명 |
+:---- |
+KioskPage1.xaml(.cs)|  
+KioskPage2.xaml(.cs) | 
+MainPage1.xaml(.cs)  |
+Scene1Page.xaml(.cs)|
+CompletePage.xaml(.cs)|
+EasySelectPage.xaml(.cs)|
+SelectPage.xaml(.cs)|
+Scene1.cs|
+Scene1.cs|
+Class1.cs|
+Program.cs|
+
+**임동연**
+파일명 |
+:---- |
+KioskPage1.xaml(.cs)|  
+KioskPage2.xaml(.cs) | 
+MainPage1.xaml(.cs)  |
+Scene1Page.xaml(.cs)|
+CompletePage.xaml(.cs)|
+EasySelectPage.xaml(.cs)|
+SelectPage.xaml(.cs)|
+Scene1.cs|
+res/images(UI images)|
+
+**서윤재**
+파일명 |
+:---- |
+MainPage1.xaml(.cs)|  
+BlackScreen.Xaml(.cs) | 
+SelectPage.xaml(.cs)  |
+Scene1.cs|
+Class1.cs|
+Program.cs|
+
+# 구현사항
+* Peripheral GPIO : 적외선 모션 감지 센서, GPIO 4<br />
+* 바코드 스캐너(B-210)
+
+
+
 
