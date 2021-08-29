@@ -49,8 +49,6 @@ CompletePage.xaml|주문 완료 페이지
 EasySelectPage.xaml|쉬운 UI의 주문 페이지
 SelectPage.xaml|메뉴 선택화면
 BlackScreen.Xaml|최초 키오스크의 빈 화면, 모션 인식 후 Scene1Page로 이동
-res/images|UI 이미지
-res/baedal.ttf|폰트파일(배달의민족)
 
 # 코드 기여자
 
