@@ -1,7 +1,7 @@
 # 시연영상
 [![Watch the video](https://img.youtube.com/vi/yjWj_VPAHco/hqdefault.jpg)](https://www.youtube.com/watch?v=yjWj_VPAHco)
 -------------------------
-# 2021 하드웨어 해커톤 : 메뉴 추천 키오스크
+# 2021 서울 하드웨어 해커톤 : 메뉴 추천 키오스크
 - **[오정민](https://github.com/owjs3901)(팀장 - HW/SW 개발자)**
 > 프로젝트 매니저<br />
 > 기획 및 개발 총괄
