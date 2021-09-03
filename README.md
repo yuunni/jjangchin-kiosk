@@ -53,7 +53,7 @@ BlackScreen.Xaml|최초 키오스크의 빈 화면, 모션 인식 후 Scene1Page
 # 코드 기여자
 
 **오정민**
-파일명 |
+| 파일명 |
 :---- |
 KioskPage1.xaml(.cs)|  
 KioskPage2.xaml(.cs) | 
@@ -67,7 +67,7 @@ Class1.cs|
 Program.cs|
 
 **임동연**
-파일명 |
+| 파일명 |
 :---- |
 KioskPage1.xaml(.cs)|  
 KioskPage2.xaml(.cs) | 
@@ -79,7 +79,7 @@ SelectPage.xaml(.cs)|
 Scene1.cs|
 
 **서윤재**
-파일명 |
+| 파일명 |
 :---- |
 MainPage1.xaml(.cs)|  
 BlackScreen.Xaml(.cs) | 
